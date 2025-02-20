@@ -1,0 +1,70 @@
+span {
+    text-align: right;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.F,
+.L {
+    color: rgb(10, 150, 145);
+}
+
+.title {
+    text-align: center;
+}
+
+
+
+img {
+    height: 250px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+section {
+    margin: 50px 20px;
+    text-align: center;
+    width: 310px;
+    height: 550px;
+    margin: 20px 20px;
+    background-color: darkgrey;
+    border: 2px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.para1 {
+    text-align: left;
+    margin-left: 35px;
+}
+
+.Hawaii {
+    color: dodgerblue;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.button {
+    color: white;
+    margin-top: 10px;
+    background-color: rgba(58, 137, 202, 255);
+    border-radius: 2px;
+    padding: 3px;
+    border: 1px solid rgba(58, 137, 202, 255);
+}
+
+.button:hover {
+    color: rgb(11, 11, 11);
+}
+
+#icon {
+    margin-top: 18px;
+}

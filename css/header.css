@@ -1,0 +1,155 @@
+.title {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.title span {
+  color: #5d94bc;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 93%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius:10px;
+  box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 3);
+  padding: 25px;
+  transition: .2s linear;
+}
+
+.header-active {
+  top: 0;
+  width: 97%;
+  border-radius: 0;
+}
+
+header .logo {
+
+  color: #333;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header .logo span {
+
+  color: #0098a1;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+
+}
+
+header .navbar ul li {
+  margin: 10px;
+
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  color: black;
+  transition: .2s linear;
+  text-decoration: none;
+
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+  color: #0098a1;
+}
+
+header .fa-list {
+  font-size: 3rem;
+  color: #0098a1;
+  cursor: pointer;
+  display: none;
+
+}
+
+
+
+/* media queries */
+
+
+@media (max-width:768px) {
+
+  header .fa-list {
+    display: block;
+
+  }
+
+  header {
+    background-color: #0098a1;
+  }
+
+  nav ul {
+    background-color: #0098a1;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: -80rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98%;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    z-index: 1000;
+    transition: .2s linear;
+    opacity: 0;
+
+  }
+
+  header .navbar ul li .active,
+  header .navbar ul li a:hover {
+    color: white;
+  }
+
+  header .navbar ul {
+
+    flex-flow: column;
+  }
+
+  header .navbar ul li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li a {
+    display: block;
+    font-size:20px;
+  }
+
+  header .nav-toggle {
+    top: 6.5rem;
+    opacity: 1;
+  }
+
+  header .fa-list {
+    color: #333;
+  }
+
+
+}
+
+@media (max-width:500px) {
+  nav ul {
+    background-color: #0098a1;
+  }
+
+}
